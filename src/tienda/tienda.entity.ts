@@ -11,7 +11,7 @@ export class TiendaEntity {
     name: string;
     
     @Column()
-    city: number;
+    city: string;
     
     @Column()
     address: string;  
