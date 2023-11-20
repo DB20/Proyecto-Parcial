@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "05d76463-ee3c-4352-9b7b-d7319dfa8914",
+		"name": "Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18830372"
+	},
+	"item": [
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Crear un producto inválido.",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"tomate\",\r\n    \"price\": 25,\r\n    \"type\": \"No sirve\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un producto válido.",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"tomate\",\r\n    \"price\": 25,\r\n    \"type\": \"Perecedero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un producto válido. 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"tomate2\",\r\n    \"price\": 25,\r\n    \"type\": \"Perecedero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un producto válido. 2 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"tomate3\",\r\n    \"price\": 25,\r\n    \"type\": \"Perecedero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener todas los productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un producto por ID.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/ada0db71-8036-48d3-91d3-105455a2f5ab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"ada0db71-8036-48d3-91d3-105455a2f5ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un producto por un ID que no existe.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/ada0db71-8036-48d3-91d3-105455a2f5cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"ada0db71-8036-48d3-91d3-105455a2f5cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un producto.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"lechuga\",\r\n    \"price\": 25,\r\n    \"type\": \"Perecedero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/ada0db71-8036-48d3-91d3-105455a2f5ab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"ada0db71-8036-48d3-91d3-105455a2f5ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un producto con un ID que no existe.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"lechuga\",\r\n    \"price\": 25,\r\n    \"type\": \"Perecedero\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/ada0db71-8036-48d3-91d3-105455a2f5cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"ada0db71-8036-48d3-91d3-105455a2f5cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un producto por su ID.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/201a3387-5925-4a70-82e4-b7bcc745d58a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"201a3387-5925-4a70-82e4-b7bcc745d58a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un producto con un ID que no existe.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/producto/201a3387-5925-4a70-82e4-b7bcc745d58a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"producto",
+								"201a3387-5925-4a70-82e4-b7bcc745d58a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tienda",
+			"item": [
+				{
+					"name": "Crear una tienda inválida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"GreenMart\",\r\n    \"city\": \"BOGOTA\",\r\n    \"address\": \"123 Main Street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear una tienda válida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"GreenMart\",\r\n    \"city\": \"BOG\",\r\n    \"address\": \"123 Main Street\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear una tienda válida 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"FreshFoods\",\r\n    \"city\": \"SMR\",\r\n    \"address\": \"654 Maple Drive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear una tienda válida. 2 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CityGrocery\",\r\n    \"city\": \"MED\",\r\n    \"address\": \"222 Birch Court\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todas las tiendas.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener una tienda por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/b0ad51e7-04c0-4b28-a1e2-2473b89319ae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"b0ad51e7-04c0-4b28-a1e2-2473b89319ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener una tienda por un ID que no existe.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/ada0db71-8036-48d3-91d3-105455a2f5cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"ada0db71-8036-48d3-91d3-105455a2f5cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar una tienda.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"FreshFoods\",\r\n    \"city\": \"SMR\",\r\n    \"address\": \"111 Spruce Road\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/b0ad51e7-04c0-4b28-a1e2-2473b89319ae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"b0ad51e7-04c0-4b28-a1e2-2473b89319ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar una tienda con un ID que no existe.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"FreshFoods\",\r\n    \"city\": \"SMR\",\r\n    \"address\": \"111 Spruce Road\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/ada0db71-8036-48d3-91d3-105455a2f5cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"ada0db71-8036-48d3-91d3-105455a2f5cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una tienda por su ID.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/74143afe-e8fb-439e-827f-395b68f41df2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"74143afe-e8fb-439e-827f-395b68f41df2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una tienda con un ID que no existe.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/tienda/201a3387-5925-4a70-82e4-b7bcc745d58a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tienda",
+								"201a3387-5925-4a70-82e4-b7bcc745d58a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tienda-Producto",
+			"item": [
+				{
+					"name": "Agregar una nueva tienda a las oferentes de un producto.",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/734a2433-db96-4c82-aa1e-92b517aa6dbe/stores/716392ba-57c9-442e-a365-3b1191a5740b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"734a2433-db96-4c82-aa1e-92b517aa6dbe",
+								"stores",
+								"716392ba-57c9-442e-a365-3b1191a5740b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar una nueva tienda a las oferentes de un producto. Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores/22f63526-1617-4570-960f-0ed12bed1b35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores",
+								"22f63526-1617-4570-960f-0ed12bed1b35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asociar una tienda que no existe a las oferentes de un producto.",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/734a2433-db96-4c82-aa1e-92b517aa6dbe/stores/716392ba-57c9-442e-a365-3b1191a5740c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"734a2433-db96-4c82-aa1e-92b517aa6dbe",
+								"stores",
+								"716392ba-57c9-442e-a365-3b1191a5740c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todas las tiendas que ofrecen un producto.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/734a2433-db96-4c82-aa1e-92b517aa6dbe/stores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"734a2433-db96-4c82-aa1e-92b517aa6dbe",
+								"stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener una tienda que ofrece un producto.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores/22f63526-1617-4570-960f-0ed12bed1b35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores",
+								"22f63526-1617-4570-960f-0ed12bed1b35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener una tienda que ofrece un producto que no existe.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde2d/stores/22f63526-1617-4570-960f-0ed12bed1b35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde2d",
+								"stores",
+								"22f63526-1617-4570-960f-0ed12bed1b35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar las tiendas que ofrecen un producto.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": \"716392ba-57c9-442e-a365-3b1191a5740b\",\n    \"name\": \"FreshFoods\",\n    \"city\": \"SMR\",\n    \"address\": \"654 Maple Drive\"\n  },\n  {\n    \"id\": \"8b421188-6196-4394-ba02-229b9c4c5b95\",\n    \"name\": \"GreenMart\",\n    \"city\": \"BOG\",\n    \"address\": \"123 Main Street\"\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar las tiendas que ofrecen un producto, con una tienda inexistente.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": \"716392ba-57c9-442e-a365-3b1191a5740c\",\n    \"name\": \"FreshFoods\",\n    \"city\": \"SMR\",\n    \"address\": \"654 Maple Drive\"\n  },\n  {\n    \"id\": \"8b421188-6196-4394-ba02-229b9c4c5b95\",\n    \"name\": \"GreenMart\",\n    \"city\": \"BOG\",\n    \"address\": \"123 Main Street\"\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una tienda que ofrece un producto.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores/716392ba-57c9-442e-a365-3b1191a5740b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores",
+								"716392ba-57c9-442e-a365-3b1191a5740b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una tienda que no ofrece un producto.",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/products/0ecbbc07-b868-44a7-8a20-4de8093fde1d/stores/716392ba-57c9-442e-a365-3b1191a5740b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0ecbbc07-b868-44a7-8a20-4de8093fde1d",
+								"stores",
+								"716392ba-57c9-442e-a365-3b1191a5740b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
-import { ProductoEntity } from 'src/producto/producto.entity';
+import { ProductoEntity } from '../producto/producto.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { BusinessError, BusinessLogicException } from 'src/shared/errors/business-errors';
-import { TiendaEntity } from 'src/tienda/tienda.entity';
+import { BusinessError, BusinessLogicException } from '../shared/errors/business-errors';
+import { TiendaEntity } from '../tienda/tienda.entity';
 
 
 
